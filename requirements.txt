@@ -1,0 +1,64 @@
+# PyTorch 2.1.0 + CUDA 11.8 호환 버전 (Python 3.10)
+# Context7 검증완료: 2024년 기준 안정 버전
+
+# ==== 핵심 Deep Learning Framework ====
+# PyTorch 2.1.0 + CUDA 11.8 (별도 설치 필요)
+# 아래 명령어로 먼저 설치하세요:
+# pip install torch==2.1.0+cu118 torchvision==0.16.0+cu118 torchaudio==2.1.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+
+# Transformers (transformers 4.44.0+ 권장)
+transformers==4.45.0
+tokenizers==0.20.1
+accelerate==0.26.0
+
+# Sentence Transformers (PyTorch 2.1 호환)
+sentence-transformers==3.3.1
+
+# Hugging Face Hub
+huggingface-hub==0.25.2
+safetensors==0.4.5
+
+# FAISS (CPU 버전)
+faiss-cpu==1.8.0
+
+# NumPy/SciPy
+numpy==1.24.0
+scipy==1.10.0
+pandas==2.0.0
+
+# 진행률 표시 및 유틸리티
+tqdm==4.66.0
+
+# JSON 처리
+orjson==3.9.10
+
+# LangChain Core
+LangChain
+langchain-community
+
+# LangSmith 추적
+langsmith
+
+# YAML (프롬프트/설정 관리)
+pyyaml>=6.0
+
+# ==== 선택적 성능 최적화 ====
+# Flash Attention (CUDA 11.8 호환, 선택사항)
+# flash-attn>=2.5.0 --no-build-isolation
+
+# ==== 개발/테스트 (선택사항) ====
+# pytest>=7.0.0
+# jupyter>=1.0.0
+
+# ==== 설치 순서 중요 ====
+# 1. PyTorch 먼저 설치 (CUDA 버전 지정)
+# 2. Transformers 생태계
+# 3. LangChain/LangSmith
+# 4. 기타 라이브러리
+
+# ==== 설치 명령어 ====
+# pip install -r requirements.txt
+# 
+# 또는 conda 환경에서:
+# conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+# pip install -r requirements.txt --no-deps transformers accelerate sentence-transformers
