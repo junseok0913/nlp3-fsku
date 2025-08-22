@@ -9,9 +9,9 @@ generation_config:
 
 # 컨텍스트 설정
 context_config:
-  max_context_length: 10000      # 컨텍스트 최대 문자 수
-  max_documents: 10             # 최대 문서 수 (1단계 5 + 2단계 5)
-  truncate_threshold: 1       # 문서 자르기 최소 길이 (이보다 작으면 잘라서 포함하지 않음)
+  max_context_length: 10000     # 컨텍스트 최대 문자 수
+  max_documents: 15             # 최대 문서 수
+  truncate_threshold: 1         # 문서 자르기 최소 길이 (이보다 작으면 잘라서 포함하지 않음)
 
 # 검색 설정
 search_config:
@@ -41,6 +41,6 @@ model_config:
 # Langsmith 설정
 langsmith_config:
   LANGSMITH_PROJECT: "fsku"
-  LANGSMITH_API_KEY: "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"
+  LANGSMITH_API_KEY: "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" # expired
   LANGSMITH_TRACING: "true"
   LANGSMITH_ENDPOINT: "https://api.smith.langchain.com"
