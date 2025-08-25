@@ -4,7 +4,7 @@ import sys
 from typing import Any, Dict, List, Optional
 import requests
 
-LAW_NAME = "부정경쟁방지 및 영업비밀보호에 관한 법률"
+LAW_NAME = "정보보호 및 개인정보보호 관리체계 인증 등에 관한 고시"
 OC = os.getenv("LAW_OC", "junseok0913")
 
 SEARCH_URL = "https://www.law.go.kr/DRF/lawSearch.do"
